@@ -1,4 +1,4 @@
-def 1c(m,n,p):
+def c1(m,n,p,a):
     k,l = 0,0
     while (k < m and l < n):
         for i in range(l, n):
@@ -19,10 +19,14 @@ def 1c(m,n,p):
 
 
 
-
+a=[[]]
 m,n,d,p=input().split()
 m,n,d,p=int(m),int(n),int(d),int(p)
+matrix=[]
+for x in range(0,m):
+    a=list(input().split())
+    matrix.append(a)
 
-if d==1:
+c1(m,n,p,matrix)
 
 
