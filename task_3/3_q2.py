@@ -1,29 +1,27 @@
-from itertools import combinations
-
 t=int(input())
-l=[]
 while(t>0):
     t-=1
     n=int(input())
-    arr=list(map(int,input().split()))
-    d=0
-    for i in combinations(arr,2):
-        a=[]
-        a.extend(arr)
-        for x in i:
-            a.remove(int(x))
+    a=list(map(int,input().split()))
+    ans=0
+    one=0
+    two=0
+    three=0
+    for i in a:
+        if(i%4==0):
+            ans+=1
+        else:
+            if(i%4==1):
+                one+=1
+            elif(i%4==2):
+                two+=1
+            elif(i%4==3):
+                three+=1
 
-        s=0
-        for x in i:
-            s+=int(x)
-        a.extend([s])
+    ans+=int(two/2)
+    ans+=int(one/4)
+    one%=4
+    ans+=min(one,three)
+    print(ans)
 
-        print(a)
-        d=0
-        for i in a:
-            if(i%4==0):
-                d+=1
-        l.append(d)
 
-print(l)
-# print(max(l))

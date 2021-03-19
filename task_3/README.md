@@ -10,12 +10,14 @@ person and then just print accoding to the above assumption.
 **Task 3 Question 2**
 
 Approach-
+in this program, first we find the nos divisble by 4 then we find the mod of remaining nos such as 
+1,2,3 and then we apply logic such as to get four.
 
 
 **Task 3 Question 3**
 
 Approach-
-
+Simple approach, find the total odd number in array and subtract from the total elements in array.
 
 **Task 3 Question 4**
 
@@ -26,5 +28,6 @@ In this Problem, we will first check for the prime nos in array and add all prim
 **Task 3 Question 5**
 
 Approach-
+Use cases as per position p.basics is to store element of a in order of the diagonals
 
 
