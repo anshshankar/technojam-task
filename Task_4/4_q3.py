@@ -5,12 +5,11 @@ while(t>0):
     word=list(input())
     word1="".join(word)
 
-    char=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-    con_char=['z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y']
+    char=['b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    c_ch=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y']
 
-    edict=dict(zip(char,con_char))
+    edict=dict(zip(char,c_ch))
     print("The original string is : " + (word1))
-    K = 1
     res=[]
     arr=word[:]
     for i in word:
@@ -20,8 +19,7 @@ while(t>0):
             res.extend(arr)
             break
         arr.remove(i)
-        trans=word1.maketrans(i,edict[i],("".join(ak)))
-        res.extend(word1.translate(trans))
+        res.extend("{}".format(edict[i]))
 
     print("".join(res))
 
