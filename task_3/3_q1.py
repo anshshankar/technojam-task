@@ -18,7 +18,7 @@ while(t>0):
     elif(res==1):
         print("tywin")
     elif(res==2):
-        print("The Hound")
+        print("hound")
     elif(res==3):
         print("Jaime")
 

@@ -46,12 +46,8 @@ def diagonalOrder4(arr, n, m):
 m,n,p=input().split()
 m,n,p=int(m),int(n),int(p)
 a=[]
-print("Enter The Elements")
 for i in range(0,m):
-    arr=[]
-    for j in range(0,n):
-        arr.append(int(input()))
-    a.append(arr)
+    a.append(list(input().split()))
 
 
 if(p==1):
