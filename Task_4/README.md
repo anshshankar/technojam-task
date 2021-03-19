@@ -1,12 +1,14 @@
 **Task 4 Question 1:**
 
 Approach-
-
+Display the list in spiral form according to the given Position.
 
 **Task 4 Question 2:**
 
 Appraoch-
-
+Its a simple use of list in python. Add all the Students data in a list. then calculate total
+marks and total marks in p,c,m . then reaarenge the list acc to the priority list.
+Then just sort array in descending order and display the elements.
 
 **Task 4 Question 3:**
 
