@@ -11,5 +11,7 @@ task_3:Competitive Programming (easy)
 
 task_4:Competitive Programming (intermediate)
 
+task_6:Design a desktop application using python to validate an email. (Intermediate)
+
 Futher details are provided in the folder of each task
 
