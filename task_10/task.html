@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Word Counter Application</title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .wrap{
+                height:300px;
+                width: 800px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            textarea{
+                height: 100%;
+                width: 100%;
+                font-size: 20px;
+                resize: none;
+                cursor:auto;
+            }
+            button{
+                height: 40px;
+                width: 200px;
+                margin-left: 38%;
+                margin-top: 10px;
+                cursor: pointer;
+                background:orangered;
+                border: none;
+                border-radius: 25px;
+                font-size: 25px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: white;
+            }
+            p{
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                color: black;
+                background: orange;
+            }
+
+            </style>
+    </head>
+    <body>
+        <h1 style="text-align: center; color: brown;">Welcome to the Word Counter Application</h1><br>
+        <h2 style="text-align: center;">Type in the Given box your text</h2>
+        <div class="wrap">
+            <textarea id="paragraph" name="paragraph" placeholder="Type Here" autofocus></textarea><br><br>
+            <p>No of Words in your text is : <span id = "count" class = "count_value">0</span></p>
+        </div>
+
+        <script>
+            const para = document.getElementById("paragraph");
+            const count = document.getElementById("count");
+
+            para.oninput = _=>{
+            if (para.value.trim() == ""){
+                var words_count = 0;
+            }
+            else{
+                var words_count = para.value.trim().split(/\w+/).length-1;
+            }
+            count.innerText = words_count;
+        }
+        </script>
+    </body>
+</html>
